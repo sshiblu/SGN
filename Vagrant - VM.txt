@@ -1,0 +1,97 @@
+Open up a terminal in the virtual machine
+
+Vagrant, A virtual machine
+
+SSH, A way to connect to remote servers in a terminal, 
+act like your in a remote server
+
+Vagrant SSH, to get into the VM 
+
+WS ->, prompt that your in the workstation, linux box  
+
+Go to work which is a shared file between the VM and your actual machine
+check in .config to check for the file
+
+Exit, kill session
+
+To share the file the file between VM and Worksation you can set it by a
+configuration file
+
+Set everything in the VM
+---------------------------------------------------------------------------------
+Vim Basics
+
+Vim is a text editor, a brilliant text editor.
+Emacs and Vim is a modernised text editor. 
+
+Vim ., run vim command, as long as your in a Unix terminal you can run Vim
+Because of the plugins you can see highlighting and stuff
+
+Practical Vim, Drew Neil
+
+Vim is available everywhere where you have a shell
+Available on remote and cloud machines
+Available on local VMs, Docker containers (like VM but smaller) etc
+It's extremely powerful
+it encourages DRY (Dont Repeat Yourself) in your editing/navigation 
+
+To get the most out of it . . .
+Learn how to use bash
+Configure it right
+Practice, practice, practice
+Learn to touch type, www.typingclub.com
+Accept you won't know it all
+
+Vim is different from everything else you've used
+Dont use it work, start by using in the evenings and weekends
+Dont use your mouse. Ever
+There's always a better way, you just havent learned it yet
+Try to learn something new every week
+
+:x, to exit 
+
+vim myfile.txt, to create a new blank file in vim
+
+Vim has 3 modes, 
+Normal Mode, is for navigation so doesnt type characters, every letter has a meaning
+Insert Mode, is used for typing stuff, when you put a character types it.
+Visual Mode, like selecting text with a mouse
+Command Pallet, : ->, which will let you run a lot of commands
+
+i, to go into Insert Mode  
+escape, takes you back into Normal Mode
+
+h,j,k,l = in insert mode
+left,down,up,right 
+
+c i ), will get rid of everything in the bracket
+c = change
+i = inside
+) = parenthesis
+} = braces
+
+d i "
+d = delete
+i = inside
+" = speech marks
+
+u = undo
+y = cut
+p = paste
+w = jump to the beginning of the next word
+e= jump you to the end of the word ?
+you can repeat motions with numbers, e.g. 2w
+f = find in the current line
+. = repeat motions? 
+
+vimtutor, it opens vim and has a vim tutorial in there, 
+try and do it everyday
+
+:w, to save
+:wq, to save and quit
+
+vim-adventures.com
+http://youtu.be/wlR5gYd6um0
+http://youtu.be/3TX3kV3TICU
+
+--------------------------------------------------------------------------------------
