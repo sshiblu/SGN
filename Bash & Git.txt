@@ -229,7 +229,7 @@ git branch new-branch, creates a new branch
 git branch, list of branches,* the branch we are on
 git checkout new-branch, switch to new branch
 git log --pretty=oneline --all --graph --decorate
-git log --oneline --all --graph --decorate
+git log --oneline --all --graph --decorate, all = all the branches
 
 []master shows us which branch we are on
 When the colour changes from green to red, it means there are changes in the
@@ -284,3 +284,12 @@ https://youtu.be/SiokK8Q1wo0
 
 Turn them all into collaborators, so they can fork or merge to fix up my notes 
 
+-----------------------------------------------------------------------------------
+
+clear = clear the terminal
+
+when you turn the pc on, use vagrant up again
+vagrant halt to turn off the VM
+
+Tasharns help on aliases 
+When writing aliases to go somewhere its a good idea to start from home directory
