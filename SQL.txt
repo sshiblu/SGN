@@ -428,4 +428,8 @@ for numerical stuff subqueries are better!
 select within select is a subquery
 
 squizoo.net
+
+Select b.fname, v.venue, l.location 
+from business b, venue v, location l 
+where b.id = v.id and v.id = l.id
  
