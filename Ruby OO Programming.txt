@@ -101,7 +101,8 @@ class Person
   def initialize #when wwe create a new instance of this class, it will run it in here
     @height = 0.0 #by putting @ in front we know it is an instance variable
     @hair_color = nil
-    @top_color = nil
+    @top_color = nills
+
   end
 
   #instance methods
@@ -115,7 +116,8 @@ class Person
   end
 
   def description
-    return "He is a good looking man with a good sense of humour. He loves life, is pensive a lot but really humble. The colour of his hair is #{@hair_color} and has a height of #{@height} cm "
+    return "He is a good looking man with a good sense of humour. He loves life, is pensive a lot but really humble. 
+    The colour of his hair is #{@hair_color} and has a height of #{@height} cm "
   end
 
 end
@@ -194,6 +196,8 @@ Abstract classes are classes we never abstantiate.
 
 raise "Babies don't cry", raises an error
 
+*args, argument for the family member
+super args
 --------
 
 class Person
@@ -265,3 +269,85 @@ name spacing classes so they are unique and make sense . . .
 p = ModuleOne::Person.new
 
 using pry to screw about the objects
+
+--------
+
+Using attribute accessor the getter and setter methods are created so . . .
+A getter method created
+Shorof.f_name
+
+A setter method created
+Shorof.f_name = 'Barry'
+
+.is_a?, will check if the class instance has been created
+--------
+
+class Person
+  require 'date'
+  attr_accessor :f_name, :s_name,:dob #creates both the setter and getter methods
+  attr_reader :email, :phone
+
+  def initialize (f_name,s_name,dob = nil)#nil so dob is optional
+#when we create a new instance of this class, it will run it in here
+    @f_name = f_name.capitalize #by putting @ in front we know it is an instance variable
+    @s_name = s_name.capitalize
+    @dob = Date.parse(dob) if dob #if dob contains anything it will come true, only time be false if variable dob contains nill or is false
+    @email = []
+    @phone = []
+  end
+
+  #instance methods
+
+  def full_name
+    return "#{@f_name} #{@s_name}"
+  end
+
+  def add_email(email)
+    @email.push(email)
+    return "Your email address #{@email} has been stored"
+  end
+
+  def remove_email(email)
+    @email.delete_at(email)
+    return "Your email address #{@email} has been removed"
+  end
+
+  def add_phone(phone)
+    @phone.push(phone)
+    return "Your phone number #{@phone} has been stored"
+  end
+
+  def remove_phone(phone)
+    @email.delete(phone)
+    return "Your email address #{@email} has been removed"
+  end
+
+  def to_s
+   puts "#{full_name} was born on #{@dob}.\n"
+   puts "Their email addresses are: #{@email}. Their phone numbers are #{@phone} "
+  end
+
+  def print_details
+    puts "#{full_name}"
+    puts "-" * full_name.length + "\n"
+    puts "Date of Birth: #{@dob.strftime("%d %B %Y")}\n\n"
+    puts 'Email Addresses:'
+    @email.each do |email|
+      puts "- #{email}"
+    end
+    puts "\nPhone Numbers:"
+    @phone.each do |phone|
+      puts "- #{phone}"
+    end
+  end
+end
+
+class FamilyMember < Person
+   attr_accessor: relationship
+   def initialize (relationship = "Someone", *args)
+     @relationship = relationship
+     super(*args)
+   end
+end
+
+----------------------------------------------------------------------------------

@@ -1,0 +1,33 @@
+TDD with Ruby
+
+Test driven development
+
+First thing to do is to write a test, then it should fail.
+(Write a failing test)
+
+Second thing, make the test go green with the smallest amount of code possible.
+
+Third thind, refactor, as long as we have a green test, we know we havent broken anything
+so we can be a bit braver with our refactoring decisions
+
+Ussualy used for Unit Tests (Individual units of code)
+
+	Defining the Interface first (mini blackbox test for the class)
+
+
+---------
+RSpec
+
+Tool for doing TDD
+
+Make sure you have the RSpec gem
+
+Rspec will look for a folder called Spec and expect to find the tests in there
+Every project will have its own Spec folder
+
+Will only identify tests which look like person_spec.rb
+
+When in the project folder write rspec.
+
+Writing some specs
+
