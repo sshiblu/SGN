@@ -146,7 +146,6 @@ describe friends;
 -------------------------------------------------------------------------------------
 Practice
 
-
 alter table friends
 
 alter is_happy set default 1; , changing the default
@@ -427,9 +426,13 @@ for numerical stuff subqueries are better!
 
 select within select is a subquery
 
+<<<<<<< HEAD
 squizoo.net
 
 Select b.fname, v.venue, l.location 
 from business b, venue v, location l 
 where b.id = v.id and v.id = l.id
+=======
+sqlzoo.net
+>>>>>>> 9d5a778dc51d370ffd57c0a1ed72dc6067ea9711
  
