@@ -14,7 +14,7 @@ gem update --system, updates the gems
 gem update json,
 gem update, updates gems
 
-vagrant provision, fix the error i was having with the provision system 
+vagrant provision, fix the error i was having with the provision system
 
 Make a file called foo.rb
 
@@ -24,7 +24,7 @@ Using Atom as the text editor
 
 put "Hello World" #prints of the words Hello World
 
-to run it, be in the folder then type 'ruby foo.rb' 
+to run it, be in the folder then type 'ruby foo.rb'
 
 --------------------------------------------------------------------------------
 
@@ -38,7 +38,7 @@ puts 1.0 + 3.0, gives floating point number 4.0, can even make one number a floa
 
 puts 9.0 / 2.0, give 4.5
 
-put 9 / 2, integer mathematics 
+put 9 / 2, integer mathematics
 so returns as 4 a there is no rounding so always goes lower
 
 How many hours are there in a year?
@@ -80,8 +80,8 @@ my_string = "Hello there,"
 puts my_string
 
 name ='Bob'
-puts 'my name is' + name + '!' 
-or 
+puts 'my name is' + name + '!'
+or
 puts "my name is #{name}!", using string interpolation
 
 name ='Bob'
@@ -90,9 +90,9 @@ name ='Vicki'
 puts "my name is #{name}!"
 
 name ='Bob'
-puts 'my name is' + name + '!' 
+puts 'my name is' + name + '!'
 name = 6
-puts 'my name is' + name + '!', 
+puts 'my name is' + name + '!',
 glitches out because of different types like before
 
 var1=8
@@ -115,7 +115,7 @@ puts '25'.to_i + 6, so converting 25 to an integer
 number = '25'
 puts number.to_f + 6, turns it to floating point number, so you get 31.0
 
-puts 'Hello'.to_i, gives 0 which is unexpected, as it Ruby cant find a way 
+puts 'Hello'.to_i, gives 0 which is unexpected, as it Ruby cant find a way
 to convert the string to an integer
 
 puts 1 + 6, puts adds an .to_s to everything so does the calculation or shizzle
@@ -130,7 +130,7 @@ puts "What's you name?"
 name = gets
 
 puts "Hello #{name}", how are you?, then prints off the name
-,but goes to new line because of the characters you entered 
+,but goes to new line because of the characters you entered
 so there is a carriage return on the command line
 
 so use chomp to solve to get rid of carriage return . . .
@@ -139,7 +139,7 @@ puts "What's you name?"
 
 name = gets.chomp
 
-puts "Hello #{name}", how are you?, call the chomp method on that 
+puts "Hello #{name}", how are you?, call the chomp method on that
 stuff so no carriage return
 
 Apply root-cause analysis!
@@ -149,7 +149,7 @@ puts, gets and chomp are kinds of methods
 ----------------------------------------------------------------------------------
 
 Lunch Homework
- 
+
 Task 1
 
 puts "\nHi, How are you?"
@@ -192,13 +192,13 @@ For Ruby for spacing we use spaces not tabs!
 
 def print_my_message(fname, sname, age), the stuff in the brackets are the method definitions, arguments
 	full_name = fname + '' + sname
-	puts full_name + ' is ' + age.to_s + ' years old', by making the age 
-	a string we can initially have it as an integer or float also string 
+	puts full_name + ' is ' + age.to_s + ' years old', by making the age
+	a string we can initially have it as an integer or float also string
 	can only be added to a string
 end
 
 call the method by:
- 
+
 print_my_message("Joe", "Bloggs", 28)
 
 def calculate(first, second)
@@ -236,7 +236,7 @@ def mess(strng)
    return strng2
 end
 
-puts mess("Barry") 
+puts mess("Barry")
 
 way better solution
 
@@ -271,6 +271,13 @@ elsif name == 'Harold'
 	puts "maybe a good name"
 end
 
+!, is a bang so it changes whatever is before it and then stores it that location.
+
+so:
+        a = "jsjsjs"
+        a.uppercase!
+
+In an if statement, the statement that comes first has a higher priority. 
 -------
 
 if (name == 'Danny' || name == 'Harold'), can use and/or operators
@@ -286,7 +293,7 @@ else
 	#Do something else
 end
 
-or . . . 
+or . . .
 
 unless (name == 'Danny' && age >25)
 	#Do something
@@ -295,7 +302,7 @@ else
 end
 
 ------
-My Attempt, Try and come back and fix it 
+My Attempt, Try and come back and fix it
 
   require 'date'
 
@@ -378,7 +385,7 @@ My Attempt, Try and come back and fix it
     end
   end
 
-  if permission 
+  if permission
    puts name.capitilise + ', you are bout ' + age.to_s + ' years old'
   end
 
@@ -402,10 +409,10 @@ then to print it say for the second one . . .
 
 Can do an array within an array
 
-	my_array = ['one','two','three',[1,2]]	
+	my_array = ['one','two','three',[1,2]]
 
 to print the interger 2 do . . .
-	
+
 	put my array[3][1]
 
 
@@ -441,12 +448,12 @@ puts foo
 You can join each item in an array in a long string format
 
 puts languages.join
-puts languages.join(", "), use to add space in between 
+puts languages.join(", "), use to add space in between
 
 puts languages.first, gets you the first item in an array
 puts languages.last, gets you the last item in an array
 
-or 
+or
 
 puts languages[-1]
 
@@ -462,7 +469,7 @@ puts languages.pop, delete the last item in an array
 puts '---------'
 puts languages
 
-print "", prints everything in a line 
+print "", prints everything in a line
 
 ---------------------------------------------------------------------------------
 
@@ -476,7 +483,7 @@ my_hash = {'one' =>(called a hash rocket) 'Bob', 'two' => 24}
 my_hash['one'] # returns 'Bob'
 my_hash['two'] # returns 24
 
-An example of a symbol is 
+An example of a symbol is
 
 foo = :thing
 
@@ -495,7 +502,7 @@ my_hash = {
 	]
 }
 
-Puts will always return nil when running it, you can see this in a shell 
+Puts will always return nil when running it, you can see this in a shell
 which you run on the command line
 
 When you use the each method
@@ -509,6 +516,8 @@ puts "This is the v: #{v}"
 end
 
 irb, to use the ruby tool/gem on the terminal
+
+When you see names parameters, remember it contains a hash.
 
 ---------
 Dannys solution
@@ -549,7 +558,7 @@ my_hash = {}
 relatives = []
   puts "\nPlease enter your relatives name:\n\n"
   relatives[r_name] = gets.chomp.capitilise
-  
+
   puts "\n Do you have any more relatives?, Please enter y or n"
   answer = gets.chomp
   if answer == y
@@ -570,7 +579,7 @@ using 'binding.pry' in the code, it is like a break point
 
 use whereami, to find where you are in the code
 
-require 'pry', you have to put require 'pry' in the beginning of the code to declare it 
+require 'pry', you have to put require 'pry' in the beginning of the code to declare it
 
 write exit, in order to exit pry
 -------------------------------------------------------------------------------------
@@ -579,7 +588,7 @@ Recursion
 
 This is a concept, allows us to call a method within itself
 
-We need to think about return values, amazing way of reducing if statements 
+We need to think about return values, amazing way of reducing if statements
 Methods always execute the last line
 
 -------
@@ -602,11 +611,10 @@ ask_recursively "Is it rainy outside?"
 ---------------------------------------------------------------------------------
 
 Homework
-Write your own sort method. 
+Write your own sort method.
 It should sort the items in an array alphabetical or numerical order.
 Assue that the array will only hold integers and strings.
 Cannot use sort method.
 Bonus points for finding the efficiency of my code
 
 ----------------------------------------------------------------------------------
-

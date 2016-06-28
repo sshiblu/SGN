@@ -1,12 +1,16 @@
-What is OOP?
+##Ruby Object Oriented Programming
 
-It gives us a way of representing a person or thing as an object.
-An object is an instance of a class and is made up of attributes/variables
-and methods. It also follows the 3 key concepts Encapsulation, Inheritance and
-Polymorphism.  
+##What is Object Oriented Programming (OOP)?
 
-Change the state only affects the object,
-when you change the methods they affect all the objects in the class.
+It gives us a way of **representing a person or thing as an object.**
+An **object** is an **instance of a class** and is made up of **attributes/variables and methods.**
+It also follows the **3 key concepts:**  
+
+1. *Encapsulation*
+2. *Inheritance*
+3. *Polymorphism*  
+
+Change the state only affects the object, when you change the methods they affect all the objects in the class.
 
 Creating instances of a class are called an object. Class is a template and
 the objects are created. When we define a class have attributes/variables and
@@ -350,4 +354,16 @@ class FamilyMember < Person
    end
 end
 
-----------------------------------------------------------------------------------
+---
+
+#### Class
+
+When altering a class make sure in the method you write self:
+
+```ruby
+@@todos = [] # it is a class variable, it can be accessed by any of these instances.
+
+def self.all
+  @@todos
+end
+```
