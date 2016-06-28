@@ -123,12 +123,12 @@ let takes a symbol and a block (Lazy loading, loaded when it's needed). Not used
 
 ---
 
-####Extra work
+####Extra Work
 
-* Look up Subject Keyword
-* Look before and after loops as well in the documentation.
-* Look up map, incredibly useful method for iterating over stuff.
-* http://sparta.global/1QOHvG3
-* http://sparta.global/1SX6Zrd
-* http://betterspecs.org
-* Look up Type Matchers and learn them
+* Look up **Subject** Keyword
+* Look **before and after loops** as well in the documentation.
+* Look up **map**, incredibly useful method for iterating over stuff.
+* [Article 1](http://sparta.global/1QOHvG3)
+* [Article 2](http://sparta.global/1SX6Zrd)
+* [RSpec Guidlines with Ruby](http://betterspecs.org)
+* [Type Matchers](https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers/type-matchers)

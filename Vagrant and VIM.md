@@ -6,11 +6,11 @@ so you can act like your in a remote server.
 
 ####Using Vagrant
 
-* Type **Vagrant SSH**, to get into the VM.
-* Type **Vagrant UP**, to get the VM started.
-* **WS ->**, prompt that you are in the workstation, the linux box.  
+* Type `Vagrant SSH` # to get into the VM.
+* Type `Vagrant UP` # to get the VM started.
+* `WS ->` # prompt that you are in the workstation, the linux box.  
 * Go to the **work folder** which is a shared file between the VM and your actual machine, you can check in *.config* to check for the file.
-* Type **Exit**, to kill a session.
+* Type `Exit` # to kill a session.
 
 * To share the file the file between the VM and Worksation you can set it by a **configuration file**.
 
@@ -44,7 +44,7 @@ As long as you are in a *Unix terminal* you can run Vim. Also, if there are plug
 * Try to learn something new every week.
 * **Don't use it at work**, start by using in the evenings and weekends.
 * **Don't use your mouse**, Ever!.
-* **There's always a better way**, you just havent learned it yet
+* **There's always a better way**, you just haven't learned it yet
 
 * **Vim is different from everything else you've used.**
 
@@ -56,39 +56,40 @@ As long as you are in a *Unix terminal* you can run Vim. Also, if there are plug
 
 #### Using VIM
 
-* Vim . , runs the vim command.
-* :x, to exit.
-* vim myfile.txt , to create a new blank file in vim.
-* Command Pallet, : ->, which will let you run a lot of commands.
-* Type i , to go into Insert Mode.  
-* Escape, takes you back into Normal Mode.
-* h,j,k,l = in Insert Mode (Left, Down, Up, Right).
-* c i ) , will get rid of everything in the bracket.
-  * c = change.
+* `Vim .` # runs the vim command.
+* `:x` # to exit.
+* `vim myfile.txt` # to create a new blank file in vim.
+* Command Pallet, `: ->` # which will let you run a lot of commands.
+* Type `i` # to go into Insert Mode.  
+* `Escape` # takes you back into Normal Mode.
+* *h,j,k,l* = in Insert Mode (Left, Down, Up, Right).
+* *c i )* # will get rid of everything in the bracket.
+  * *c* = change.
+  * *i* = inside.
+  * *)* = parenthesis.
 
-  * i = inside.
-  * ) = parenthesis.
-  * } = braces.
-* d i " ,
-  * d = delete.
+  * *}* = braces.
+* *d i "*
+  * *d* = delete.
+  * *i* = inside.
 
-  * i = inside.
-  * " = speech marks.
-* u = undo.
-* y = cut.
-* p = paste.
-* w = jump to the beginning of the next word.
-* e = jumps you to the end of the word ?
-* You can repeat motions with numbers, e.g. 2w.
-* f = find in the current line.
-* . = repeat motions?
-* :w, to save.
-* :wq, to save and quit.
+  * *"* = speech marks.
+* *u* = undo.
+* *y* = cut.
+* *p* = paste.
+* *w* = jump to the beginning of the next word.
+* *e* = jumps you to the end of the word?.
+* You can repeat motions with numbers, e.g. *2w*.
+* *f* = find in the current line.
+* *.* = repeat motions?.
+* `:w`, to save.
+* `:wq`, to save and quit.
 
-* **vimtutor**, it opens vim and has a vim tutorial in there,
-try and do it everyday
+* `vimtutor`, it opens vim and has a vim tutorial in there,
+try and do it everyday. It is available on anywhere.
 
 #####Extra VIM Links
+
 1) [Vim Adventures](vim-adventures.com).
 2) [Youtube Video 1](http://youtu.be/wlR5gYd6um0).
 3) [Youtube Video 2](http://youtu.be/3TX3kV3TICU).
