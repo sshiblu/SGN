@@ -121,10 +121,13 @@ let takes a symbol and a block (Lazy loading, loaded when it's needed). Not used
 				let(:category) {24}
 				let(:car) {Car.new('Corsa', true)}
 
-####Subject Keyword
+---
 
+####Extra work
+
+* Look up Subject Keyword
 * Look before and after loops as well in the documentation.
-* map, incredibly useful method for iterating over stuff.
+* Look up map, incredibly useful method for iterating over stuff.
 * http://sparta.global/1QOHvG3
 * http://sparta.global/1SX6Zrd
 * http://betterspecs.org
