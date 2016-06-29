@@ -3,7 +3,7 @@ In Ruby the code is read from left to right
 Whats a rubygem?
 Its a library or a tool
 
-ruby -v, will show what version of ruby is installed
+ruby -v, will show what version of ruby is installedgem
 gem list, see what gems you have
 json, read and spit out json
 minitest, unit testing framework
@@ -277,7 +277,7 @@ so:
         a = "jsjsjs"
         a.uppercase!
 
-In an if statement, the statement that comes first has a higher priority. 
+In an if statement, the statement that comes first has a higher priority.
 -------
 
 if (name == 'Danny' || name == 'Harold'), can use and/or operators
