@@ -102,10 +102,44 @@ On pry:
 
 ---
 
-#### My Attempt at regex
+####My Attempt at regex
 
-* `\w+(?:\.\w+)?@(gmail|hotmail|outlook|live|)\.com` # My attempt at a regex email address or can use `\w+(\.\w+)?@[a-z]+\.com`
+* `\w+(?:\.\w+)?@(gmail|hotmail|outlook|live|)\.com` # My attempt at a regex email address or can use `\w+(\.\w+)?@[a-z]+\.com`.
 
-* `020\d{8}` My attempt at a phone number only in London
+* `020[\d ?]{8,10}` # My attempt at a phone number only in London.
 
 ---
+
+######The RSpec tests to check against a regex
+
+require 'spec_helper'
+
+describe "Person class" do
+
+  it "should only add emails in the correct format " do
+    joe = Person.new("joe","bloggs")
+    expect{joe.add_email('989988989899')}.to raise_error ArgumentError
+    # joe.add_email('989899898') is the action that is carried out
+    #expect{joe.add_email('joe@gmail.com')joe.add_email('joe@gmail.com').to match(/\w+(?:\.\w+)?@(gmail|hotmail|outlook|live|)\.com/)
+  end
+
+  it "should store telephone numbers in an array" do
+    joe = Person.new("joe","bloggs")
+    joe.add_phone('020 7790 2282')
+    joe.add_phone('020 7363 9393')
+    expect(joe.phone).to eq ["020 7790 2282", '020 7363 9393']
+  end
+
+  it "should remove telephone numbers in an array" do
+    joe = Person.new("joe","bloggs")
+    joe.add_phone('020 7348 3443')
+    joe.remove_phone(0)
+    expect(joe.phone).to eq []
+  end
+
+  it "should only add telephone numbers in the correct format " do
+    joe = Person.new("joe","bloggs")
+    expect{joe.add_phone('98dfdddfsdfsdf')}.to raise_error ArgumentError
+  end
+
+end
