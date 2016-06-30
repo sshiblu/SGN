@@ -1,4 +1,4 @@
-##Regular Expressions (regex or regexp)
+## Regular Expressions (regex or regexp)
 
 Regular Expressions are used to match against strings. Fundamentally, Regular Expression are a mathematical thing. They can be either very complex or easy.
 
@@ -18,7 +18,7 @@ When comparing using regex you use:
 
 **Use Rubular.com**
 
-####RegExp Syntax
+#### RegExp Syntax
 
 **The following syntax matches character by character**
 
@@ -46,7 +46,7 @@ When comparing using regex you use:
 
 * `/\d/` # predefined classes, `d` is a predefined class that matches against any single digit as well, `\` is a escape character
 
-#####Operators
+##### Operators
 
 * `/a*/` # so it operates on the character that came before it, for this instance it means 0 or more of the thing that came before it.(a or aa or aaa)
 
@@ -70,13 +70,13 @@ For emails the regex we made in class:
 
   * `/\d{3,4}/` # this will match against 3-4 occurrences of any digit  
 
-####Lines
+#### Lines
 
 * `/^ruby/` # it will match ruby on a line which has a carriage return before it
 
 * `/ruby$/` # it will match ruby on a line which has a carriage return after it
 
-####Brackets
+#### Brackets
 
 * `/(R|B)ob/` # it will match either Rob or bob
 
@@ -88,7 +88,7 @@ For emails the regex we made in class:
 
 ---
 
-####Using regex in ruby
+#### Using regex in ruby
 
 On pry:
 
@@ -102,7 +102,7 @@ On pry:
 
 ---
 
-####My Attempt at regex
+###### My Attempt at regex
 
 * `\w+(?:\.\w+)?@(gmail|hotmail|outlook|live|)\.com` # My attempt at a regex email address or can use `\w+(\.\w+)?@[a-z]+\.com`.
 
@@ -110,8 +110,10 @@ On pry:
 
 ---
 
-######The RSpec tests to check against a regex
+###### The RSpec tests to check against a regex
 
+```ruby
+#The test was made in the person_spec.rb file
 require 'spec_helper'
 
 describe "Person class" do
@@ -123,23 +125,49 @@ describe "Person class" do
     #expect{joe.add_email('joe@gmail.com')joe.add_email('joe@gmail.com').to match(/\w+(?:\.\w+)?@(gmail|hotmail|outlook|live|)\.com/)
   end
 
-  it "should store telephone numbers in an array" do
-    joe = Person.new("joe","bloggs")
-    joe.add_phone('020 7790 2282')
-    joe.add_phone('020 7363 9393')
-    expect(joe.phone).to eq ["020 7790 2282", '020 7363 9393']
-  end
-
-  it "should remove telephone numbers in an array" do
-    joe = Person.new("joe","bloggs")
-    joe.add_phone('020 7348 3443')
-    joe.remove_phone(0)
-    expect(joe.phone).to eq []
-  end
-
   it "should only add telephone numbers in the correct format " do
     joe = Person.new("joe","bloggs")
     expect{joe.add_phone('98dfdddfsdfsdf')}.to raise_error ArgumentError
   end
 
 end
+```
+---
+
+###### The implementation of the regex tests
+
+```ruby
+class Person
+
+  attr_reader :dob, :first_name,:surname, :email, :phone
+
+  def initialize(f_name,s_name,dob=nil)
+      @first_name = f_name.capitalize
+      @surname = s_name.capitalize
+      @dob = Date.parse(dob) if dob
+      @email = []
+      @phone = []
+  end
+
+  def add_email(email)
+    email_regex = /\w+(?:\.\w+)?@(gmail|hotmail|outlook|live|)\.com/
+    if email =~ email_regex
+      @email << email
+    else
+      raise ArgumentError, "Please enter a valid email"
+    end
+  end
+
+  def add_phone(phone)
+    phone_regex = /020[\d ?]{8,10}/
+    if phone =~ phone_regex
+      @phone << phone
+    else
+      raise ArgumentError, "Please enter a valid phone number"
+    end
+  end
+end
+
+```
+
+---

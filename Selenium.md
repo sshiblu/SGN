@@ -13,7 +13,7 @@ A bunch of browsers such as:
 * Safari
 * PhantomJS, a headless browser?
 
-####It can be scripted with . . .
+#### It can be scripted with . . .
 
 A bunch of different browsers such as:
 
@@ -25,7 +25,7 @@ A bunch of different browsers such as:
 * Pearl
 * Javascript
 
-##Selenium with ruby
+## Selenium with ruby
 
 You have to first install the Selenium gel. To do so write the following line on the command line:
 

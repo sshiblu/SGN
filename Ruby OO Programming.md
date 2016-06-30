@@ -1,6 +1,6 @@
 ##Ruby Object Oriented Programming
 
-##What is Object Oriented Programming (OOP)?
+####What is Object Oriented Programming (OOP)?
 
 It gives us a way of **representing a person or thing as an object.**
 An **object** is an **instance of a class** and is made up of **attributes/variables and methods.**

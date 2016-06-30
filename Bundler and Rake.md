@@ -1,4 +1,4 @@
-##Bundler
+## Bundler
 
 **Bundler** is a gem which we should have installed, for **gem dependency**. Bundler aims to **bundle up the gems**, all the **dependencies for a project.** Every new project will use Bundler by creating a **Gemfile**.  
 
@@ -26,7 +26,7 @@ gem 'httparty'
 ```
 ---
 
-####Useful Commands
+#### Useful Commands
 
 On the command line write:
 
@@ -42,7 +42,7 @@ dependencies specifically for a project.
 * `bundle exec` # any command you put after it will be ran in the context of the bundle, so specific to your project.
 
 ---
-####Bundler Extra
+#### Bundler Extra
 
 * Its considered **good practice** to use **versions** when using the gem file.
 
@@ -54,11 +54,11 @@ dependencies specifically for a project.
 
 ---
 
-##Rake
+## Rake
 
 Rake is essentially a **task runner.** It runs a culmination of *tasks* in one file. Similar to Bundler you would have one Rakefile for each new project. Rake is useful as it helps us build more complicated tasks.
 
-####Useful Commands
+#### Useful Commands
 
 On the command line write:
 
@@ -68,7 +68,7 @@ On the command line write:
 
 * `rake deploy` #
 
-* `rake db migrate` # 
+* `rake db migrate` #
 
 ---
 

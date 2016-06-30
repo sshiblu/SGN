@@ -1,6 +1,6 @@
-##External Data
+## External Data
 
-####File Method
+#### File Method
 
 The simplest way to read a file in use the code:
 
@@ -26,7 +26,7 @@ File.write('write','Hello this is some more text')
 
 ---
 
-##YAML (Yet Another Markup Language)
+## YAML (Yet Another Markup Language)
 
 * Holds key and value pairs.
 
@@ -36,7 +36,7 @@ File.write('write','Hello this is some more text')
 
 ---
 
-######Task: Create a file for phonebook.yml
+###### Task: Create a file for phonebook.yml
 
 * To load a YAML file in on the command line use the ruby gem **irb**. The syntax used when applying the gem are the following:
 
@@ -62,7 +62,7 @@ To get something specifically with the file you have to use syntax similar to th
 
 ---
 
-######My YAML file for people:
+###### My YAML file for people:
 
 ```yaml
 people:
@@ -106,7 +106,7 @@ people:
 
 ---
 
-######The RSpec test to check the YAML file has been loaded for the Phone/Address Book:
+###### The RSpec test to check the YAML file has been loaded for the Phone/Address Book:
 
 ```ruby
 #The test was made in the AddressBook_spec.rb file
@@ -125,7 +125,7 @@ end
 
 ---
 
-######The Implementation of the RSpec test:
+###### The Implementation of the RSpec test:
 
 ```ruby
 #the Implementation was carried out in the AddressBook.rb file

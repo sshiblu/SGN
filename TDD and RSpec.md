@@ -1,5 +1,5 @@
 
-##Test Driven Development (TDD)
+## Test Driven Development (TDD)
 
 1) *First thing* to do when writing a test, **is to make sure it fails.**
 
@@ -13,7 +13,7 @@ Usually, used for **Unit Tests**. It's where you define the Interface first, so 
 On a side note, something in curly brackets is a block if not a hash.
 ---
 
-##RSpec
+## RSpec
 
 It's a Tool for doing **TDD**.
 
@@ -27,11 +27,11 @@ When in the project folder write Rspec and write some specs up.
 
 ---
 
-##More RSpec
+## More RSpec
 
 We use RSpec to make a UI, Using the methods such as Describe and Let. We should use let keyword whenever we can.
 
-####Dependency Injection
+#### Dependency Injection
 
 Use it wisely as it is not always the right solution.
 
@@ -59,7 +59,7 @@ end
 ```
 ---
 
-####Double
+#### Double
 
 				faketime = double("FakeTime", now: time)
 
@@ -67,7 +67,7 @@ This is meta-programming. Creates the class and method using the double method w
 
 ---
 
-####Stubbing
+#### Stubbing
 
 Stub allow us create a fake method and classes instead of overriding. **This is creating a method programmed to return a specific value.** You can stub literally any object, but only works on the object, the instance of the class.
 
@@ -91,13 +91,13 @@ Another stub example:
 
 ---
 
-####Test-specific extensions
+#### Test-specific extensions
 
 Allows us to stub out part of an object. We are extending a class just for using tests.
 
 ---
 
-####Message expectations
+#### Message expectations
 
 A method stub that raises an error if it isn't called. A good way of checking certain methods are always called.
 
@@ -114,7 +114,7 @@ end
 ```
 ---
 
-####Let Keyword
+#### Let Keyword
 
 let takes a symbol and a block (Lazy loading, loaded when it's needed). Not used on stuff you are testing and can only be used outside of it methods.
 
@@ -123,7 +123,7 @@ let takes a symbol and a block (Lazy loading, loaded when it's needed). Not used
 
 ---
 
-####Extra Work
+#### Extra Work
 
 * Look up **Subject** Keyword
 * Look **before and after loops** as well in the documentation.

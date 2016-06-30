@@ -1,10 +1,10 @@
-##Vagrant - VM (Virtual Machine)
+## Vagrant - VM (Virtual Machine)
 
 Open up a terminal in the virtual machine, use SSH.
 This is a way to connect to remote servers in a terminal,
 so you can act like your in a remote server.
 
-####Using Vagrant
+#### Using Vagrant
 
 * Type `Vagrant SSH` # to get into the VM.
 * Type `Vagrant UP` # to get the VM started.
@@ -18,7 +18,7 @@ so you can act like your in a remote server.
 
 ---
 
-##Vim Basics
+## Vim
 
 **Vim** is a text editor, a brilliant text editor. Emacs and Vim are  modernised text editors.
 
@@ -26,7 +26,7 @@ As long as you are in a *Unix terminal* you can run Vim. Also, if there are plug
 
       Book for VIM: Practical Vim, Drew Neil
 
-####Features of VIM
+#### Features of VIM
 
 * Vim is available everywhere where you have a shell.
 * Available on remote and cloud machines
@@ -35,7 +35,7 @@ As long as you are in a *Unix terminal* you can run Vim. Also, if there are plug
 
 * It encourages DRY (Dont Repeat Yourself) in your editing/navigation.
 
-####To get the most out of it VIM
+#### To get the most out of it VIM
 * Learn how to use bash properly.
 * Configure it right.
 * Practice, practice, practice.
@@ -49,7 +49,7 @@ As long as you are in a *Unix terminal* you can run Vim. Also, if there are plug
 * **Vim is different from everything else you've used.**
 
 ---
-#####Vim Modes
+#### Vim Modes
 1) **Normal Mode**, is for navigation so doesn't type characters and every letter has a meaning.
 2) **Insert Mode**, is used for typing stuff so when you type a character it inserts it.
 3) **Visual Mode**, so like selecting text with a mouse.
@@ -88,7 +88,7 @@ As long as you are in a *Unix terminal* you can run Vim. Also, if there are plug
 * `vimtutor`, it opens vim and has a vim tutorial in there,
 try and do it everyday. It is available on anywhere.
 
-#####Extra VIM Links
+#### Extra VIM Links
 
 1) [Vim Adventures](vim-adventures.com).
 2) [Youtube Video 1](http://youtu.be/wlR5gYd6um0).
