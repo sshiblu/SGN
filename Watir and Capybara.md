@@ -21,7 +21,7 @@ After opening up Pry run the following lines:
 * b.title # returns all the text in the element, the current browser better than using page source which gets everything
 * b.back # takes you back in the browser
 * b.forward # takes you forward in the browser
-* b.status # gives you back whatevers in the status bar at that time
+* b.status # gives you back whatevers in the status bar at tha  t time
 * b.html # brings you back all the html in the page
 * b.text.match /hello/ # return nil so no hello, when inserted ussualy returned a matchdata object so there is a match
 * b.text.include? "ussualy", checks if it contains the word "ussualy", the command returned true.
@@ -52,7 +52,6 @@ After opening up Pry run the following lines:
 ###### Waiting
 
 We can do waiting in Watir as well so:
-
 * b.driver # get back a Selenium Webdriver object
 * b.driver.manage.timeout.implicit_wait = 5
 * b.select_list(id: 'entry_1000001').wait_until_present

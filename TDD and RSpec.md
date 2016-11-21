@@ -1,4 +1,3 @@
-
 ## Test Driven Development (TDD)
 
 1) *First thing* to do when writing a test, **is to make sure it fails.**

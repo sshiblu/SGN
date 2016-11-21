@@ -544,7 +544,6 @@ end
 --------
 My attempt
 
-
 my_hash = {}
   puts "\nHi, Please enter your name:\n\n"
   my_hash[:name] = gets.chomp.capitalize

@@ -98,4 +98,5 @@ Then type the following lines on the command line:
 wait.until do
   browser.find_element(tag_name: "h1")
 end
+
 # wait.until returns the last line in the block.
